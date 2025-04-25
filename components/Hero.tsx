@@ -1,7 +1,6 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 
-
 export default function Hero() {
     const router = useRouter();
 
@@ -11,10 +10,10 @@ export default function Hero() {
         <div>
             <h1>Hello!</h1>
             <div className="buttons flex gap-2 items-center justify-center">
-                <button onClick={() => router.push('/Pathfinder')}>Go to PathFinder</button>
-                <button onClick={() => router.push('/Sorter')}>Go to Sorter</button>
+                <button onClick={() => setTimeout(() => router.push('/Pathfinder'), 0)}>Go to PathFinder</button>
+                <button onClick={() => setTimeout(() => router.push('/Sorter'), 0)}>Go to Sorter</button>
             </div>
         </div>
         </>
     )
-}
+}  
